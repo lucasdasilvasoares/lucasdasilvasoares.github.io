@@ -1,0 +1,31 @@
+User-agent: Googlebot 
+User-agent: Googlebot-Mobile 
+User-agent: Googlebot-Image 
+User-agent: Mediapartners-Google 
+User-agent: Adsbot-Google 
+User-agent: BingBot 
+User-agent: Yahoo! Slurp 
+User-agent: Alexa 
+User-agent: Pagerank 
+User-agent: Ping 
+User-agent: ia_archiver 
+
+User-agent: Googlebot 
+Disallow: 
+User-agent: Slurp 
+Disallow: 
+User-agent: MSNBot 
+Disallow: 
+User-agent: Googlebot-Image 
+Disallow: 
+User-agent: yahoo-mmcrawler 
+Disallow: 
+User-agent: psbot 
+Disallow: 
+User-agent: * 
+Disallow: 
+
+Allow: luminosodesenho.com.br/
+Allow: www.luminosodesenho.com.br/
+Allow: www.luminosodesenho.com.br/index.html
+Allow: index.html 
