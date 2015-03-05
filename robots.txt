@@ -24,8 +24,3 @@ User-agent: psbot
 Disallow: 
 User-agent: * 
 Disallow: 
-
-Allow: domdeser.com.br/
-Allow: www.domdeser.com.br/
-Allow: www.domdeser.com.br/index.html
-Allow: index.html 
