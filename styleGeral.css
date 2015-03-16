@@ -1,5 +1,5 @@
 ﻿*{margin:0;padding:0;outline:none;}
-body{font:normal 16px Arial;color:#333}
+body{font:normal 16px Arial;color:#333;background:url(./images/conteudo-bg.png)}
 ol, ul {list-style: none;}
 a{text-decoration:none;color:#064f80}
 a:hover{text-decoration:underline}
@@ -10,7 +10,7 @@ img{border:none}
 .guardaLinhas{position:absolute;top:0;left:0;width:100%}
 .centralizaLinha{margin:0 auto;position:relative;width:996px}
 .separaConteudo{float:left;width:100%;padding-bottom:40px}
-.icone{background-image:url(./images/icones-pb-sprite.png);background-repeat:no-repeat}
+.iconePb{background-image:url(./images/icones-pb-sprite.png);background-repeat:no-repeat}
 .iconeHabilidades{width:120px;height:120px}
 .iconeFormacao{width:100px;height:100px;background-position:-690px 0}
 .iconeExperiencia{width:100px;height:100px;background-position:-590px 0}
@@ -21,7 +21,8 @@ img{border:none}
 ------------------------------------------------------------------------------------------------------------------*/
 h1 {padding-bottom:30px;font-size:30px}
 h2 {padding-bottom:20px;font-size:22px}
-p{}
+h3{padding-bottom:18px;font-size:16px}
+p{padding-bottom:18px}
 
 /*  div gerais
 ------------------------------------------------------------------------------------------------------------------*/
@@ -29,7 +30,7 @@ p{}
 
 /*  topo
 ------------------------------------------------------------------------------------------------------------------*/
-#guardaCabecalho{float:left;width:100%;background:#e9e9e9 url(./images/header-bg.jpg) repeat-x;position:relative;z-index:50}
+#guardaCabecalho{float:left;width:100%;background:#e9e9e9 url(./images/header-bg.jpg) repeat-x;position:relative;z-index:50;position:fixed;top:0;left:0}
 #guardaCabecalho header{float:left;width:100%}
 #guardaCabecalhoTopo{float:left;width:100%;padding:10px 0 16px}
 #cabecalhoTopo{margin:0 auto;width:996px}
@@ -54,20 +55,20 @@ p{}
 #guardaCabecalhoMenu img{float:left;padding-bottom:5px}
 #sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url(./images/menu-sombra-inferior.png) repeat-x}
 
-#guardaLinhasEscudos{z-index:10}
+#guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
 #linhasEscudos{position:absolute;top:112px;right:220px}
-#linhaHtml5{position:absolute;top:0;left:20px;width:43px;height:2234px;background:url(./images/linha-vertical-html5.png) repeat-y}
-#linhaCss3{position:absolute;top:0;left:87px;width:25px; height:2234px;background:url(./images/linha-vertical-css3.png) repeat-y}
-#linhaJs{position:absolute;top:0;left:115px;width:23px;  height:2234px;background:url(./images/linha-vertical-javascript.png) repeat-y}
+#linhaHtml5{position:absolute;top:0;left:20px;width:43px;height:4800px;background:url(./images/linha-vertical-html5.png) repeat-y}
+#linhaCss3{position:absolute;top:0;left:87px;width:25px; height:4800px;background:url(./images/linha-vertical-css3.png) repeat-y}
+#linhaJs{position:absolute;top:0;left:115px;width:23px;  height:4800px;background:url(./images/linha-vertical-javascript.png) repeat-y}
 
 #guardaLinhaVerde{z-index:90}
-#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:2346px;background:url(./images/linha-vertical-verde.png) repeat-y}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:4912px;background:url(./images/linha-vertical-verde.png) repeat-y}
 
 /*  conteudo
 ------------------------------------------------------------------------------------------------------------------*/
-#guardaContent{float:left;width:100%;background:url(./images/content-bg.png) repeat;position:relative;z-index:20}
+#guardaContent{float:left;width:100%;position:relative;z-index:20}
 #content{margin:0 auto;width:996px}
-#content section{float:left;float:left;width:960px;padding:30px 0 300px 30px}
+#content section{float:left;float:left;width:960px;padding:147px 0 183px 30px}
 
 #home li{float:left;padding:0 30px 30px 0}
 #home li a{float:left;display:block;width:420px;height:195px;color:#fafafa;background:#079961;position:relative;text-decoration:none}
@@ -78,7 +79,7 @@ p{}
 #home #bgAzul{background:#0873b9}
 #home li a.quadrado span:first-child{font-size:29px}
 #home li a span:first-child{float:left;font-size:40px;padding: 18px 0 0 18px}
-#home li a span.icone{position:absolute;bottom:20px;right:20px}
+#home li a span.iconePb{position:absolute;bottom:20px;right:20px}
 #home li a span.luzMarcado{position:absolute;bottom:0;right:0;width:100%;height:0;background:#FFF;transition:300ms;opacity:0.16;filter:alpha(opacity=16)}
 #home li a:hover span.luzMarcado{height:100%}
 
@@ -171,10 +172,24 @@ p{}
 #nvSom{height:34px}
 #nvDirecaoArte{height:34px}
 
+.guardaBox{float:left;background:#f0f0f0;border:8px solid #b2b2b2;position:relative}
+.boxCinza{float:left;width:460px;padding:20px;padding-right:0;padding-bottom:30px}
+.boxBranco{float:left;width:360px;text-align:center;background:#FFF}
+.boxMedio{padding:40px;padding-left:0;padding-right:0}
+.boxIcone{position:absolute;bottom:20px;right:380px;}
+#iconeAnimacao{width:114px;height:49px;background:url(./images/icones-pb-sprite.png) no-repeat -890px 0}
+#iconeInternet{width:110px;height:110px;background:url(./images/icones-pb-sprite.png) no-repeat -480px 0}
+
+.dataExp{float:right;width:300px;text-align:right;padding-right:160px}
+.infoExp{float:left;width:300px;text-align:right}
+.expSemImg{margin:60px auto;display:block}
+
 /* Parallax Scroll */
-/*
-body{height:6000px}
-#guardaCabecalho{position:fixed;top:0;left:0}
-#guardaContent{position:fixed;top:114px;left:0;height:4400px}
+/* 
+body{height:20000px;position:relative}
+#guardaLinhasEscudos{height:100%;background:url(./images/conteudo-bg.png)}
+#guardaContent{position:fixed;top:0;left:0;height:4400px}
+#linhasEscudos{overflow:hidden;width:222px;height:0;right:0}
 .guardaLinhas{position:fixed}
+#linhaVerde{height:0;overflow:hidden}
 */
