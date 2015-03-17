@@ -30,7 +30,7 @@ p{padding-bottom:18px}
 
 /*  topo
 ------------------------------------------------------------------------------------------------------------------*/
-#guardaCabecalho{float:left;width:100%;background:#e9e9e9 url(./images/header-bg.jpg) repeat-x;position:relative;z-index:50;position:fixed;top:0;left:0}
+#guardaCabecalho{background:#e9e9e9 url(./images/header-bg.jpg) repeat-x;width:100%;position:fixed;top:0;left:0;z-index:50;display:block}
 #guardaCabecalho header{float:left;width:100%}
 #guardaCabecalhoTopo{float:left;width:100%;padding:10px 0 16px}
 #cabecalhoTopo{margin:0 auto;width:996px}
@@ -46,13 +46,13 @@ p{padding-bottom:18px}
 #escudosTopo li #escudoHtml5{background-position:-38px 0}
 #escudosTopo li #escudoCss3{background-position:-76px 0}
 #escudosTopo li #escudoJs{background-position:-114px 0}
-#guardaCabecalhoMenu{float:left;width:100%;background:#F0F0F0;border-top:1px solid #CCC}
-#guardaCabecalhoMenu div{margin:0 auto;width:996px}
-#guardaCabecalhoMenu ul{float:left;margin-left:10px;font-size:18px}
-#guardaCabecalhoMenu li{float:left;margin:0 16px}
-#guardaCabecalhoMenu a{float:left;color:#4D4D4D;border-bottom:2px solid #F0F0F0;padding:10px 20px 6px 20px;text-decoration:none;}
-#guardaCabecalhoMenu a:hover{border-color:#AAA}
-#guardaCabecalhoMenu img{float:left;padding-bottom:5px}
+#guardaCabecalhoNav{float:left;width:100%;background:#F0F0F0;border-top:1px solid #CCC}
+#guardaCabecalhoNav nav{margin:0 auto;width:996px}
+#guardaCabecalhoNav ul{float:left;margin-left:10px;font-size:18px}
+#guardaCabecalhoNav li{float:left;margin:0 16px}
+#guardaCabecalhoNav a{float:left;color:#4D4D4D;border-bottom:2px solid #F0F0F0;padding:10px 20px 6px 20px;text-decoration:none;}
+#guardaCabecalhoNav a:hover{border-color:#AAA}
+#guardaCabecalhoNav img{float:left;padding-bottom:5px}
 #sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url(./images/menu-sombra-inferior.png) repeat-x}
 
 #guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
@@ -62,7 +62,7 @@ p{padding-bottom:18px}
 #linhaJs{position:absolute;top:0;left:115px;width:23px;  height:4800px;background:url(./images/linha-vertical-javascript.png) repeat-y}
 
 #guardaLinhaVerde{z-index:90}
-#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:8200px;background:url(./images/linha-vertical-verde.png) repeat-y}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url(./images/linha-vertical-verde.png) repeat-y}
 
 /*  conteudo
 ------------------------------------------------------------------------------------------------------------------*/
@@ -121,6 +121,7 @@ p{padding-bottom:18px}
 .boxBranco{float:left;width:360px;text-align:center;background:#FFF}
 .boxMedio{padding:40px}
 .boxMaior{padding:90px}
+.boxGigante{padding:120px}
 .boxBranco{padding-left:0;padding-right:0}
 .boxIcone{position:absolute;bottom:20px;right:380px;}
 #iconeAnimacao{width:114px;height:49px;background-position:-890px 0}
