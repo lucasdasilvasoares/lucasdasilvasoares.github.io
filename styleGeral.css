@@ -1,5 +1,5 @@
 ﻿*{margin:0;padding:0;outline:none;}
-body{font:normal 16px Arial;color:#333;background:url(./images/conteudo-bg.png);position:relative;overflow-x:hidden}
+body{font:normal 16px Arial;color:#333;background:url(http://images.lucasanimador.com.br/conteudo-bg.png);position:relative;overflow-x:hidden}
 ol, ul {list-style: none;}
 a{text-decoration:none;color:#064faa}
 a:hover{text-decoration:underline}
@@ -10,7 +10,7 @@ img{border:none}
 .guardaLinhas{position:absolute;top:0;left:0;width:100%}
 .centralizaLinha{margin:0 auto;position:relative;width:996px}
 .separaConteudo{float:left;width:100%;padding-bottom:40px}
-.iconePb{background-image:url(./images/icones-pb-sprite.png);background-repeat:no-repeat}
+.iconePb{background-image:url(http://images.lucasanimador.com.br/icones-pb-sprite.png);background-repeat:no-repeat}
 .iconeHabilidades{width:120px;height:120px}
 .iconeFormacao{width:100px;height:100px;background-position:-690px 0}
 .iconeExperiencia{width:100px;height:100px;background-position:-590px 0}
@@ -30,7 +30,7 @@ p{padding-bottom:18px}
 
 /*  topo
 ------------------------------------------------------------------------------------------------------------------*/
-#guardaCabecalho{background:#e9e9e9 url(./images/header-bg.jpg) repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
+#guardaCabecalho{background:#e9e9e9 url(http://images.lucasanimador.com.br/header-bg.jpg) repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
 #guardaCabecalho header{float:left;width:100%}
 #guardaCabecalhoTopo{float:left;width:100%;padding:10px 0 16px}
 #cabecalhoTopo{margin:0 auto;width:996px}
@@ -38,11 +38,11 @@ p{padding-bottom:18px}
 #logoTopo a{position:relative;display:block;color:#4D4D4D}
 #logoTopo a > span:first-child{font-size:24px;float:right}
 #logoTopo a > span:first-child > span{float:left;padding-top:7px}
-#logoTopo a > span:first-child > span:first-child{font-weight:bold;color:#FFF;text-align:center;width:38px;height:38px;background:url(./images/escudo-sprite.png) no-repeat;}
+#logoTopo a > span:first-child > span:first-child{font-weight:bold;color:#FFF;text-align:center;width:38px;height:38px;background:url(http://images.lucasanimador.com.br/escudo-sprite.png) no-repeat;}
 #logoTopo a > span#logoDesc{font-size:16px;position:absolute;top:36px;right:0}
 #escudosTopo{float:right;padding:6px 64px 0 0}
 #escudosTopo li{float:left;padding-left:10px}
-#escudosTopo li a{float:left;width:38px;height:44px;background:url(./images/escudo-sprite.png) no-repeat}
+#escudosTopo li a{float:left;width:38px;height:44px;background:url(http://images.lucasanimador.com.br/escudo-sprite.png) no-repeat}
 #escudosTopo li #escudoHtml5{background-position:-38px 0}
 #escudosTopo li #escudoCss3{background-position:-76px 0}
 #escudosTopo li #escudoJs{background-position:-114px 0}
@@ -53,16 +53,16 @@ p{padding-bottom:18px}
 #guardaCabecalhoNav a{float:left;color:#4D4D4D;border-bottom:2px solid #F0F0F0;padding:10px 20px 6px 20px;text-decoration:none;}
 #guardaCabecalhoNav a:hover{border-color:#AAA}
 #guardaCabecalhoNav img{float:left;padding-bottom:5px}
-#sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url(./images/menu-sombra-inferior.png) repeat-x}
+#sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url(http://images.lucasanimador.com.br/menu-sombra-inferior.png) repeat-x}
 
 #guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
 #linhasEscudos{position:absolute;top:112px;right:220px}
-#linhaHtml5{position:absolute;top:0;left:20px;width:43px;height:4800px;background:url(./images/linha-vertical-html5.png) repeat-y}
-#linhaCss3{position:absolute;top:0;left:87px;width:25px; height:4800px;background:url(./images/linha-vertical-css3.png) repeat-y}
-#linhaJs{position:absolute;top:0;left:115px;width:23px;  height:4800px;background:url(./images/linha-vertical-javascript.png) repeat-y}
+#linhaHtml5{position:absolute;top:0;left:20px;width:43px;height:4800px;background:url(http://images.lucasanimador.com.br/linha-vertical-html5.png) repeat-y}
+#linhaCss3{position:absolute;top:0;left:87px;width:25px; height:4800px;background:url(http://images.lucasanimador.com.br/linha-vertical-css3.png) repeat-y}
+#linhaJs{position:absolute;top:0;left:115px;width:23px;  height:4800px;background:url(http://images.lucasanimador.com.br/linha-vertical-javascript.png) repeat-y}
 
 #guardaLinhaVerde{z-index:90}
-#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url(./images/linha-vertical-verde.png) repeat-y}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url(http://images.lucasanimador.com.br/linha-vertical-verde.png) repeat-y}
 
 /*  conteudo
 ------------------------------------------------------------------------------------------------------------------*/
@@ -91,7 +91,7 @@ p{padding-bottom:18px}
 .boxHabilidade{float:left;width:100px;height:90px;background:#7a9bba;text-align:center;border-radius:10px;}
 .boxHabilidade div{float:right;width:10px;height:90px;position:relative;background:#5a7ca1}
 .boxHabilidade div > span{position:absolute;bottom:2px;left:2px;width:6px;height:86px;background:#94bcdc}
-.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url(./images/habilidades-sprite.png)}
+.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url(http://images.lucasanimador.com.br/habilidades-sprite.png)}
 /*
 1=26px
 2=34px
@@ -132,11 +132,11 @@ p{padding-bottom:18px}
 .expSemImg{margin:60px auto;display:block}
 
 .iconePortifolio{width:120px;height:120px;background-position:-360px 0}
-.lista li{background:url(./images/bullet-check.png) no-repeat;padding:0 0 7px 30px;line-height:22px}
+.lista li{background:url(http://images.lucasanimador.com.br/bullet-check.png) no-repeat;padding:0 0 7px 30px;line-height:22px}
 /* Parallax Scroll */
 /* 
 body{height:20000px}
-#guardaLinhasEscudos{height:100%;background:url(./images/conteudo-bg.png)}
+#guardaLinhasEscudos{height:100%;background:url(http://images.lucasanimador.com.br/conteudo-bg.png)}
 #guardaContent{position:fixed;top:0;left:0;height:4400px}
 #linhasEscudos{overflow:hidden;width:222px;height:0;right:0}
 .guardaLinhas{position:fixed}
