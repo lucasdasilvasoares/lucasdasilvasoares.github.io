@@ -1,7 +1,7 @@
 ﻿*{margin:0;padding:0;outline:none;}
 body{font:normal 16px Arial;color:#333;background:url(./images/conteudo-bg.png)}
 ol, ul {list-style: none;}
-a{text-decoration:none;color:#064f80}
+a{text-decoration:none;color:#064faa}
 a:hover{text-decoration:underline}
 img{border:none}
 
@@ -62,7 +62,7 @@ p{padding-bottom:18px}
 #linhaJs{position:absolute;top:0;left:115px;width:23px;  height:4800px;background:url(./images/linha-vertical-javascript.png) repeat-y}
 
 #guardaLinhaVerde{z-index:90}
-#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:4912px;background:url(./images/linha-vertical-verde.png) repeat-y}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:8200px;background:url(./images/linha-vertical-verde.png) repeat-y}
 
 /*  conteudo
 ------------------------------------------------------------------------------------------------------------------*/
@@ -83,8 +83,8 @@ p{padding-bottom:18px}
 #home li a span.luzMarcado{position:absolute;bottom:0;right:0;width:100%;height:0;background:#FFF;transition:300ms;opacity:0.16;filter:alpha(opacity=16)}
 #home li a:hover span.luzMarcado{height:100%}
 
-#habilidades div:first-child img{float:left;margin-bottom:40px;border-radius:200px}
-#habilidades div:first-child p{float:left;padding:40px 0 0 40px;width:540px}
+#habilidades div:first-child img{float:left;margin-bottom:40px;border-radius:200px;box-shadow:2px 2px 7px #777}
+#habilidades div:first-child p{float:left;padding:40px 0 0 40px;width:520px}
 #listaHabilidades{float:left;width:860px;font-size:13px}
 #listaHabilidades li{float:left;width:100px;padding:0 20px 10px 0}
 #listaHabilidades li > span{float:left;width:92px;height:34px;text-align:center;margin-top:4px}
@@ -92,41 +92,6 @@ p{padding-bottom:18px}
 .boxHabilidade div{float:right;width:10px;height:90px;position:relative;background:#5a7ca1}
 .boxHabilidade div > span{position:absolute;bottom:2px;left:2px;width:6px;height:86px;background:#94bcdc}
 .boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url(./images/habilidades-sprite.png)}
-#skLogica{background-position:-840px 0}
-#skHtml5{background-position:-540px 0}
-#skCss3{background-position:-300px 0}
-#skJs{background-position:-660px 0}
-#skJquery{background-position:-720px 0}
-#skParallax{background-position:-1080px 0}
-#skAjax{background-position:-60px 0}
-#skCross{background-position:-240px 0}
-#skWStandards{background-position:-1560px 0}
-#skMobile{background-position:-900px 0}
-#skResponsive{background-position:-1260px 0}
-#skSeo{background-position:-1380px 0}
-#skSvn{background-position:-1440px 0}
-#skGit{background-position:-480px 0}
-#skUx{background-position:-1500px 0}
-#skAnalytics{background-position:-120px 0}
-#skXml{background-position:-1620px 0}
-#skJson{background-position:-780px 0}
-#skPhp{background-position:-1200px 0}
-#skCpanel{background-position:-180px 0}
-/*#skAgnitio{background-position:-px 0}*/
-#skMvc{background-position:-960px 0}
-#skOop{background-position:-1020px 0}
-#skScrum{background-position:-1320px 0}
-#skIngles{background-position:-600px 0}
-#skFlash{background-position:-360px 0}
-#skGimp{background-position:-420px 0}
-#skPhotoshop{background-position:-1140px 0}
-#skAnimacao{background-position:-1680px 0}
-#skRoteiro{background-position:-1920px 0}
-#skStoryboard{background-position:-2040px 0}
-#skDesenho{background-position:-1800px 0}
-#skCharDesing{background-position:-1740px 0}
-#skSom{background-position:-1980px 0}
-#skDirecaoArte{background-position:-1860px 0}
 /*
 1=26px
 2=34px
@@ -136,54 +101,37 @@ p{padding-bottom:18px}
 6=69px
 7=77px
 */
-#nvLogica{height:77px}
-#nvHtml5{height:60px}
-#nvCss3{height:60px}
-#nvJs{height:69px}
-#nvJquery{height:69px}
-#nvParallax{height:69px}
-#nvAjax{height:69px}
-#nvCross{height:69px}
-#nvWStandards{height:69px}
-#nvMobile{height:52px}
-#nvResponsive{height:52px}
-#nvSeo{height:69px}
-#nvSvn{height:69px}
-#nvGit{height:52px}
-#nvUx{height:60px}
-#nvAnalytics{height:60px}
-#nvXml{height:60px}
-#nvJson{height:52px}
-#nvPhp{height:43px}
-#nvCpanel{height:60px}
-#nvAgnitio{height:52px}
-#nvMvc{height:60px}
-#nvOop{height:60px}
-#nvScrum{height:34px}
-#nvIngles{height:34px}
-#nvFlash{height:43px}
-#nvGimp{height:60px}
-#nvPhotoshop{height:34px}
-#nvAnimacao{height:60px}
-#nvRoteiro{height:43px}
-#nvStoryboard{height:43px}
-#nvDesenho{height:60px}
-#nvCharDesign{height:60px}
-#nvSom{height:34px}
-#nvDirecaoArte{height:34px}
+#skLogica{background-position:-840px 0}#skHtml5{background-position:-540px 0}#skCss3{background-position:-300px 0}#skJs{background-position:-660px 0}
+#skJquery{background-position:-720px 0}#skParallax{background-position:-1080px 0}#skAjax{background-position:-60px 0}#skCross{background-position:-240px 0}
+#skWStandards{background-position:-1560px 0}#skMobile{background-position:-900px 0}#skResponsive{background-position:-1260px 0}#skSeo{background-position:-1380px 0}
+#skSvn{background-position:-1440px 0}#skGit{background-position:-480px 0}#skUx{background-position:-1500px 0}#skAnalytics{background-position:-120px 0}
+#skXml{background-position:-1620px 0}#skJson{background-position:-780px 0}#skPhp{background-position:-1200px 0}#skCpanel{background-position:-180px 0}
+/*#skAgnitio{background-position:-px 0}*/
+#skMvc{background-position:-960px 0}#skOop{background-position:-1020px 0}#skScrum{background-position:-1320px 0}#skIngles{background-position:-600px 0}
+#skFlash{background-position:-360px 0}#skGimp{background-position:-420px 0}#skPhotoshop{background-position:-1140px 0}#skAnimacao{background-position:-1680px 0}
+#skRoteiro{background-position:-1920px 0}#skStoryboard{background-position:-2040px 0}#skDesenho{background-position:-1800px 0}#skCharDesing{background-position:-1740px 0}
+#skSom{background-position:-1980px 0}#skDirecaoArte{background-position:-1860px 0}#nvLogica{height:77px}#nvHtml5{height:60px}#nvCss3{height:60px}#nvJs{height:69px}
+#nvJquery{height:69px}#nvParallax{height:69px}#nvAjax{height:69px}#nvCross{height:69px}#nvWStandards{height:69px}#nvMobile{height:52px}#nvResponsive{height:52px}
+#nvSeo{height:69px}#nvSvn{height:69px}#nvGit{height:52px}#nvUx{height:60px}#nvAnalytics{height:60px}#nvXml{height:60px}#nvJson{height:52px}#nvPhp{height:43px}#nvCpanel{height:60px}
+#nvAgnitio{height:52px}#nvMvc{height:60px}#nvOop{height:60px}#nvScrum{height:34px}#nvIngles{height:34px}#nvFlash{height:43px}#nvGimp{height:60px}#nvPhotoshop{height:34px}
+#nvAnimacao{height:60px}#nvRoteiro{height:43px}#nvStoryboard{height:43px}#nvDesenho{height:60px}#nvCharDesign{height:60px}#nvSom{height:34px}#nvDirecaoArte{height:34px}
 
 .guardaBox{float:left;background:#f0f0f0;border:8px solid #b2b2b2;position:relative}
 .boxCinza{float:left;width:460px;padding:20px;padding-right:0;padding-bottom:30px}
 .boxBranco{float:left;width:360px;text-align:center;background:#FFF}
-.boxMedio{padding:40px;padding-left:0;padding-right:0}
+.boxMedio{padding:40px}
+.boxMaior{padding:90px}
+.boxBranco{padding-left:0;padding-right:0}
 .boxIcone{position:absolute;bottom:20px;right:380px;}
-#iconeAnimacao{width:114px;height:49px;background:url(./images/icones-pb-sprite.png) no-repeat -890px 0}
-#iconeInternet{width:110px;height:110px;background:url(./images/icones-pb-sprite.png) no-repeat -480px 0}
+#iconeAnimacao{width:114px;height:49px;background-position:-890px 0}
+#iconeInternet{width:110px;height:110px;background-position:-480px 0}
 
 .dataExp{float:right;width:300px;text-align:right;padding-right:160px}
 .infoExp{float:left;width:300px;text-align:right}
 .expSemImg{margin:60px auto;display:block}
 
+.iconePortifolio{width:120px;height:120px;background-position:-360px 0}
+.lista li{background:url(./images/bullet-check.png) no-repeat;padding:0 0 7px 30px;line-height:22px}
 /* Parallax Scroll */
 /* 
 body{height:20000px;position:relative}

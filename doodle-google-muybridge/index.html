@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title>Cavalinho</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        #wrapper{margin: 0 auto;width: 469px;position: relative;}
+        
+        #painel{background: url('painel.png');width: 469px;height: 162px;position: absolute;top: 50px;left: 0;z-index: 10;}
+        
+        #guardaPeliculas{float: left;width: 469px;text-align: center;padding-top: 50px;}
+        #guardaPeliculas #pelicula{background: url('pelicula.jpg') repeat 0 0;width: 469px;height: 162px;margin: 0;padding: 0;float: left;}
+        
+        #guardaStatus{float: left;padding-top: 20px;width: 100%;}
+        #guardaStatus label{float: left;width: 300px;}
+        #guardaStatus input{float: left;width: 169px;}
+        
+        #play{width: 100px;height: 50px;margin: 10px auto 0 auto;}
+    </style>
+    <script type="text/javascript">
+        var valorBackPosition = 0; // valor do positionamento do background (CSS)
+        var incrementoAtual = 1.05;  // valor da posição "inicial" do "incremento"
+        var valorIncremento = 1.05; // incrementa de "incremento" * "incremento"
+        var distanciaQuadro = 0; // distancia de "cada" quadro
+        var finalQuadro = false; // indica se o quadro terminou ou não
+        var delay = 41; // tempo de execução da animação
+
+        function animar() {
+            
+            document.getElementById("pelicula").style.backgroundPosition = valorBackPosition + "px 0";
+            // modifica o background position
+
+            valorBackPosition -= incrementoAtual;
+            // decrementa o background position para a próxima alteração
+
+            if (valorBackPosition <= (-804)) {
+                valorBackPosition = valorBackPosition + 804;
+                /*alert("Background Position: " + valorBackPosition + " e distanciaQuadro: " + distanciaQuadro);*/
+            }
+            /* 
+                SE o background position atingiu o seu total (804px), o valor é "resetado".
+
+                Por exemplo: se o meu "valorBackPosition" for (-800) e eu tiver um "incrementoAtual" de (5)
+                o próximo valor seria (-805), mas com o "reset" o "valorBackPosition" se inicia em "1"
+                da próxima vez (-804 + 805 = 1)
+
+                Outro exemplo: o tamanho máximo do backgroud position (neste caso 804) é o número "0" da
+                próxima vez que a película se repete, sendo o 805 igual à 1 o 806 igual à 2 e assim por diante.
+
+                Para que o "valorBackPosition" não se decremente infinitamente é efetuado este "reset" para
+                que o mesmo volte "para o início".            
+            */
+
+            if (!pause) {
+                setTimeout(animar, delay);
+            }
+            /* 
+                A função chama ela própria cada 40 milisegundos. Essa função chamando
+                ela mesma várias vezes seguidas é o que faz à "animação"
+            */
+        }
+
+        function verificaDistanciaQuadro() {
+            if (incrementoAtual != 67) {
+                distanciaQuadro -= incrementoAtual;
+                // decrementa a posição de "cada" quadro
+
+                if (distanciaQuadro <= -67) {
+                    distanciaQuadro = distanciaQuadro + 67;
+                    // reseta a "distanciaQuadro", segue a mesma lógica da variável "valorBackPosition" (explicado acima)
+                    finalQuadro = true;
+                }
+                if (!pause) {
+                    setTimeout(verificaDistanciaQuadro, delay);
+                }
+            }
+        }
+
+        function modificaVelocidade() {
+
+            if (incrementoAtual + valorIncremento > 63) {
+                    if (incrementoAtual == 63) {
+                        if (distanciaQuadro == -2.3414223353718455) {
+                            incrementoAtual = 67;
+                            return;
+                        }
+                    } else {
+                        incrementoAtual = 63;
+                    }
+                } else {
+                     incrementoAtual *= valorIncremento;
+                }
+
+                if (!pause) {
+                    setTimeout(modificaVelocidade, delay);                
+                }
+            }
+
+        function verificaStatus() {
+
+            document.getElementById("distanciaQuadro").value = distanciaQuadro;
+            document.getElementById("incrementoAtual").value = incrementoAtual;
+            document.getElementById("valorBackPosition").value = valorBackPosition;
+            document.getElementById("finalQuadro").value = finalQuadro;
+
+            }
+
+        window.onload = function () {
+            // VERIFICAR PAUSE (NÃO "PARA" NO FINAL)
+            animacaoRodando = false;
+            document.getElementById("play").onclick = function () {
+                if (!animacaoRodando) {
+                    animacaoRodando = true;
+                    pause = false;
+                    animar();
+                    verificaDistanciaQuadro();
+                    modificaVelocidade();
+                    setInterval(verificaStatus, delay);
+                } else {
+                    if (incrementoAtual != 67) {
+                        modificaVelocidade();
+                    }
+                    pause = true;
+                    animar();
+                    verificaDistanciaQuadro();
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="painel">
+        </div>
+        <div id="guardaPeliculas">
+            <div id="pelicula"></div>
+            <button id="play">Play</button>
+            <div id="guardaStatus">
+                <label>Distância do Quadro:</label><input type="type" id="distanciaQuadro" name="name" value="" /><br />
+                <label>Incremento Atual:</label><input type="type" id="incrementoAtual" name="name" value="" /><br />
+                <label>Background Position:</label><input type="type" id="valorBackPosition" name="name" value=" " /><br />
+                <label>Final Quadro:</label><input type="type" id="finalQuadro" name="name" value=" " /><br />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
