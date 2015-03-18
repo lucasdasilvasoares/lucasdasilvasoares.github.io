@@ -651,22 +651,24 @@
 								<span id="msgErro">Ocorreu um erro! Tente novamente.</span>
 							</form>
 						</div>
-						<script>											
+						<script>									
 							var elForm=document.getElementById('guardaFormContato').getElementsByTagName('form')[0];
-							var xmlhttp;
-							if (window.XMLHttpRequest) {
-								xmlhttp = new XMLHttpRequest();
-							} else {// code for IE6, IE5
-								xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-							}
-							xmlhttp.onreadystatechange = function () {
-								if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-									console.log('xmlhttp.responseText');
+							elForm.onSubmit=function(){
+								var xmlhttp;
+								if (window.XMLHttpRequest) {
+									xmlhttp = new XMLHttpRequest();
+								} else {// code for IE6, IE5
+									xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 								}
-							}
-							xmlhttp.open("POST", "http://form.lucasanimador.com.br/", true);
-							xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-							xmlhttp.send('campoNome='+elForm.campoNome.value+'&campoEmail='+elForm.campoEmail.value+'&campoMsg='+elForm.campoMsg.value+'&ajax=1');
+								xmlhttp.onreadystatechange = function () {
+									if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+										console.log('xmlhttp.responseText');
+									}
+								}
+								xmlhttp.open("POST", "http://form.lucasanimador.com.br/", true);
+								xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+								xmlhttp.send('campoNome='+elForm.campoNome.value+'&campoEmail='+elForm.campoEmail.value+'&campoMsg='+elForm.campoMsg.value+'&ajax=1');
+							};
 						</script>
 						<!--
 						<div id="guardaInfosContato">
