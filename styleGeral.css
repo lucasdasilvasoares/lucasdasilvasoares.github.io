@@ -1,5 +1,5 @@
 ﻿*{margin:0;padding:0;outline:none;}
-body{font:normal 16px Arial;color:#333;background:url(http://images.lucasanimador.com.br/conteudo-bg.png);position:relative;overflow-x:hidden}
+body{font:normal 16px Arial;color:#333;background:url("./lucasanimador/images/conteudo-bg.png")}
 ol, ul {list-style: none;}
 a{text-decoration:none;color:#064faa}
 a:hover{text-decoration:underline}
@@ -7,15 +7,19 @@ img{border:none}
 
 /*  classes gerais 
 ------------------------------------------------------------------------------------------------------------------*/
-.guardaLinhas{position:absolute;top:0;left:0;width:100%}
-.centralizaLinha{margin:0 auto;position:relative;width:996px}
 .separaConteudo{float:left;width:100%;padding-bottom:40px}
-.iconePb{background-image:url(http://images.lucasanimador.com.br/icones-pb-sprite.png);background-repeat:no-repeat}
-.iconeHabilidades{width:120px;height:120px}
-.iconeFormacao{width:100px;height:100px;background-position:-690px 0}
+.iconePb{background-image:url("./images/icones-pb-sprite.png");background-repeat:no-repeat}
 .iconeExperiencia{width:100px;height:100px;background-position:-590px 0}
-.iconePortfolio{width:120px;height:120px;background-position:-120px 0}
-.iconeContato{width:120px;height:120px;background-position:-240px 0}
+.guardaBox{float:left;background:#f0f0f0;border:8px solid #b2b2b2;position:relative}
+.boxCinza{float:left;width:460px;padding:20px;padding-right:0;padding-bottom:30px}
+.boxBranco{float:left;width:360px;text-align:center;background:#FFF}
+.boxBranco img{width:270px;height:190px}
+.boxMedio{padding:40px}
+.boxMaior{padding:90px}
+.boxGigante{padding:130px}
+.boxBranco{padding-left:0;padding-right:0}
+.boxIcone{position:absolute;bottom:20px;right:380px;}
+.lista li{background:url("./lucasanimador/images/bullet-check.png") no-repeat;padding:0 0 7px 30px;line-height:22px}
 
 /*  elementos gerais
 ------------------------------------------------------------------------------------------------------------------*/
@@ -28,9 +32,20 @@ p{padding-bottom:18px}
 ------------------------------------------------------------------------------------------------------------------*/
 #guardaTudo{float:left;width:100%}
 
+/*  linhas escudos
+------------------------------------------------------------------------------------------------------------------*/
+#guardaLinhasEscudos,#guardaLinhaVerde{position:absolute;top:0;left:0;width:100%}
+#guardaLinhasEscudos > div,#guardaLinhaVerde > div{margin:0 auto;position:relative;width:996px}
+
+#guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
+#linhasEscudos{position:absolute;top:112px;right:82px;width:118px;height:2000px;background:url(./lucasanimador/images/linha-html5-css3-javascript.png) repeat-y}
+
+#guardaLinhaVerde{z-index:90}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url("./lucasanimador/images/linha-vertical-verde.png") repeat-y}
+
 /*  topo
 ------------------------------------------------------------------------------------------------------------------*/
-#guardaCabecalho{background:#e9e9e9 url(http://images.lucasanimador.com.br/header-bg.jpg) repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
+#guardaCabecalho{background:#e9e9e9 url("./lucasanimador/images/header-bg.jpg") repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
 #guardaCabecalho header{float:left;width:100%}
 #guardaCabecalhoTopo{float:left;width:100%;padding:10px 0 16px}
 #cabecalhoTopo{margin:0 auto;width:996px}
@@ -38,11 +53,11 @@ p{padding-bottom:18px}
 #logoTopo a{position:relative;display:block;color:#4D4D4D}
 #logoTopo a > span:first-child{font-size:24px;float:right}
 #logoTopo a > span:first-child > span{float:left;padding-top:7px}
-#logoTopo a > span:first-child > span:first-child{font-weight:bold;color:#FFF;text-align:center;width:38px;height:38px;background:url(http://images.lucasanimador.com.br/escudo-sprite.png) no-repeat;}
+#logoTopo a > span:first-child > span:first-child{font-weight:bold;color:#FFF;text-align:center;width:38px;height:38px;background:url("./images/escudo-sprite.png") no-repeat;}
 #logoTopo a > span#logoDesc{font-size:16px;position:absolute;top:36px;right:0}
 #escudosTopo{float:right;padding:6px 64px 0 0}
 #escudosTopo li{float:left;padding-left:10px}
-#escudosTopo li a{float:left;width:38px;height:44px;background:url(http://images.lucasanimador.com.br/escudo-sprite.png) no-repeat}
+#escudosTopo li a{float:left;width:38px;height:44px;background:url("./images/escudo-sprite.png") no-repeat}
 #escudosTopo li #escudoHtml5{background-position:-38px 0}
 #escudosTopo li #escudoCss3{background-position:-76px 0}
 #escudosTopo li #escudoJs{background-position:-114px 0}
@@ -52,17 +67,10 @@ p{padding-bottom:18px}
 #guardaCabecalhoNav li{float:left;margin:0 16px}
 #guardaCabecalhoNav a{float:left;color:#4D4D4D;border-bottom:2px solid #F0F0F0;padding:10px 20px 6px 20px;text-decoration:none;}
 #guardaCabecalhoNav a:hover{border-color:#AAA}
-#guardaCabecalhoNav img{float:left;padding-bottom:5px}
-#sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url(http://images.lucasanimador.com.br/menu-sombra-inferior.png) repeat-x}
+#guardaCabecalhoNav a.marcado{border-color:#0873b9}
+#guardaCabecalhoNav img{float:left;padding-bottom:5px;width:16px;height:16px}
+#sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url("./lucasanimador/images/menu-sombra-inferior.png") repeat-x}
 
-#guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
-#linhasEscudos{position:absolute;top:112px;right:220px}
-#linhaHtml5{position:absolute;top:0;left:20px;width:43px;height:4800px;background:url(http://images.lucasanimador.com.br/linha-vertical-html5.png) repeat-y}
-#linhaCss3{position:absolute;top:0;left:87px;width:25px; height:4800px;background:url(http://images.lucasanimador.com.br/linha-vertical-css3.png) repeat-y}
-#linhaJs{position:absolute;top:0;left:115px;width:23px;  height:4800px;background:url(http://images.lucasanimador.com.br/linha-vertical-javascript.png) repeat-y}
-
-#guardaLinhaVerde{z-index:90}
-#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url(http://images.lucasanimador.com.br/linha-vertical-verde.png) repeat-y}
 
 /*  conteudo
 ------------------------------------------------------------------------------------------------------------------*/
@@ -70,43 +78,41 @@ p{padding-bottom:18px}
 #content{margin:0 auto;width:996px}
 #content section{float:left;float:left;width:960px;padding:147px 0 183px 30px}
 
-#home li{float:left;padding:0 30px 30px 0}
-#home li a{float:left;display:block;width:420px;height:195px;color:#fafafa;background:#079961;position:relative;text-decoration:none}
-#home li a span{cursor:pointer}
-#home li a.quadrado{width:195px}
-#home #bgVermelho{background:#e34f26}
-#home #bgAmarelo{background:#e5a32b}
-#home #bgAzul{background:#0873b9}
-#home li a.quadrado span:first-child{font-size:29px}
-#home li a span:first-child{float:left;font-size:40px;padding: 18px 0 0 18px}
-#home li a span.iconePb{position:absolute;bottom:20px;right:20px}
-#home li a span.luzMarcado{position:absolute;bottom:0;right:0;width:100%;height:0;background:#FFF;transition:300ms;opacity:0.16;filter:alpha(opacity=16)}
-#home li a:hover span.luzMarcado{height:100%}
+/* Home */
+#listaHome li{float:left;padding:0 30px 30px 0}
+#listaHome li a{float:left;display:block;width:420px;height:195px;color:#fafafa;background:#079961;position:relative;text-decoration:none}
+#listaHome li a span{cursor:pointer}
+#listaHome li a.quadrado{width:195px}
+#listaHome #bgVermelho{background:#e34f26}
+#listaHome #bgAmarelo{background:#e5a32b}
+#listaHome #bgAzul{background:#0873b9}
+#listaHome li a.quadrado span:first-child{font-size:29px}
+#listaHome li a span:first-child{float:left;font-size:40px;padding: 18px 0 0 18px}
+#listaHome li a span.iconePb{position:absolute;bottom:20px;right:20px}
+#listaHome li a span.luzMarcado{position:absolute;bottom:0;right:0;width:100%;height:0;background:#FFF;transition:300ms;opacity:0.16;filter:alpha(opacity=16)}
+#listaHome li a:hover span.luzMarcado{height:100%}
+#iconeHabilidades{width:120px;height:120px}
+#iconeFormacao{width:100px;height:100px;background-position:-690px 0}
+#iconePortfolio{width:120px;height:120px;background-position:-120px 0}
+#iconeContato{width:120px;height:120px;background-position:-240px 0}
 
-#habilidades div:first-child img{float:left;margin-bottom:40px;border-radius:200px;box-shadow:2px 2px 7px #777}
-#habilidades div:first-child p{float:left;padding:40px 0 0 40px;width:520px}
+/* Habilidades */
+#habilidadesResumo img{float:left;margin-bottom:40px;border-radius:200px;box-shadow:2px 2px 7px #777;width:220px;height:220px}
+#habilidadesResumo p{float:left;padding:40px 0 0 40px;width:520px}
 #listaHabilidades{float:left;width:860px;font-size:13px}
 #listaHabilidades li{float:left;width:100px;padding:0 20px 10px 0}
 #listaHabilidades li > span{float:left;width:92px;height:34px;text-align:center;margin-top:4px}
 .boxHabilidade{float:left;width:100px;height:90px;background:#7a9bba;text-align:center;border-radius:10px;}
 .boxHabilidade div{float:right;width:10px;height:90px;position:relative;background:#5a7ca1}
 .boxHabilidade div > span{position:absolute;bottom:2px;left:2px;width:6px;height:86px;background:#94bcdc}
-.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url(http://images.lucasanimador.com.br/habilidades-sprite.png)}
-/*
-1=26px
-2=34px
-3=43px
-4=52px
-5=60px
-6=69px
-7=77px
-*/
+.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url("./images/habilidades-sprite.png")}
+/* Habilidades > Skills */
+/*		---		1=26px		---		2=34px		---		3=43px		---		4=52px		---		5=60px		---		6=69px		---		7=77px		---		*/
 #skLogica{background-position:-840px 0}#skHtml5{background-position:-540px 0}#skCss3{background-position:-300px 0}#skJs{background-position:-660px 0}
 #skJquery{background-position:-720px 0}#skParallax{background-position:-1080px 0}#skAjax{background-position:-60px 0}#skCross{background-position:-240px 0}
 #skWStandards{background-position:-1560px 0}#skMobile{background-position:-900px 0}#skResponsive{background-position:-1260px 0}#skSeo{background-position:-1380px 0}
 #skSvn{background-position:-1440px 0}#skGit{background-position:-480px 0}#skUx{background-position:-1500px 0}#skAnalytics{background-position:-120px 0}
 #skXml{background-position:-1620px 0}#skJson{background-position:-780px 0}#skPhp{background-position:-1200px 0}#skCpanel{background-position:-180px 0}
-/*#skAgnitio{background-position:-px 0}*/
 #skMvc{background-position:-960px 0}#skOop{background-position:-1020px 0}#skScrum{background-position:-1320px 0}#skIngles{background-position:-600px 0}
 #skFlash{background-position:-360px 0}#skGimp{background-position:-420px 0}#skPhotoshop{background-position:-1140px 0}#skAnimacao{background-position:-1680px 0}
 #skRoteiro{background-position:-1920px 0}#skStoryboard{background-position:-2040px 0}#skDesenho{background-position:-1800px 0}#skCharDesing{background-position:-1740px 0}
@@ -116,29 +122,25 @@ p{padding-bottom:18px}
 #nvAgnitio{height:52px}#nvMvc{height:60px}#nvOop{height:60px}#nvScrum{height:34px}#nvIngles{height:34px}#nvFlash{height:43px}#nvGimp{height:60px}#nvPhotoshop{height:34px}
 #nvAnimacao{height:60px}#nvRoteiro{height:43px}#nvStoryboard{height:43px}#nvDesenho{height:60px}#nvCharDesign{height:60px}#nvSom{height:34px}#nvDirecaoArte{height:34px}
 
-.guardaBox{float:left;background:#f0f0f0;border:8px solid #b2b2b2;position:relative}
-.boxCinza{float:left;width:460px;padding:20px;padding-right:0;padding-bottom:30px}
-.boxBranco{float:left;width:360px;text-align:center;background:#FFF}
-.boxMedio{padding:40px}
-.boxMaior{padding:90px}
-.boxGigante{padding:120px}
-.boxBranco{padding-left:0;padding-right:0}
-.boxIcone{position:absolute;bottom:20px;right:380px;}
+/* Formação */
 #iconeAnimacao{width:114px;height:49px;background-position:-890px 0}
 #iconeInternet{width:110px;height:110px;background-position:-480px 0}
 
+/* Portfolio */
+.iconePortifolio{width:120px;height:120px;background-position:-360px 0}
 .dataExp{float:right;width:300px;text-align:right;padding-right:160px}
 .infoExp{float:left;width:300px;text-align:right}
-.expSemImg{margin:60px auto;display:block}
+#expSemImg{margin:60px auto;display:block}
 
-.iconePortifolio{width:120px;height:120px;background-position:-360px 0}
-.lista li{background:url(http://images.lucasanimador.com.br/bullet-check.png) no-repeat;padding:0 0 7px 30px;line-height:22px}
+/* Contato */
+
+
 /* Parallax Scroll */
-/* 
-body{height:20000px}
-#guardaLinhasEscudos{height:100%;background:url(http://images.lucasanimador.com.br/conteudo-bg.png)}
-#guardaContent{position:fixed;top:0;left:0;height:4400px}
-#linhasEscudos{overflow:hidden;width:222px;height:0;right:0}
-.guardaLinhas{position:fixed}
-#linhaVerde{height:0;overflow:hidden}
-*/
+
+body#prlxOk{height:28000px;background:none}
+#prlxOk #guardaLinhasEscudos,
+#prlxOk #guardaLinhaVerde{position:fixed}
+#prlxOk #guardaLinhasEscudos{height:100%;background:url("./lucasanimador/images/conteudo-bg.png")}
+#prlxOk #linhasEscudos,
+#prlxOk #linhaVerde{height:0;overflow:hidden}
+#prlxOk #guardaContent{position:fixed;top:0;left:0;height:4400px}
