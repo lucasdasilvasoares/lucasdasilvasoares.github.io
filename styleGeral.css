@@ -1,5 +1,5 @@
 ﻿*{margin:0;padding:0;outline:none;}
-body{font:normal 16px Arial;color:#333;background:url("./lucasanimador/images/conteudo-bg.png")}
+body{font:normal 16px Arial;color:#333;background:url("http://images.lucasanimador.com.br/conteudo-bg.png")}
 ol, ul {list-style: none;}
 a{text-decoration:none;color:#064faa}
 a:hover{text-decoration:underline}
@@ -19,7 +19,7 @@ img{border:none}
 .boxGigante{padding:130px}
 .boxBranco{padding-left:0;padding-right:0}
 .boxIcone{position:absolute;bottom:20px;right:380px;}
-.lista li{background:url("./lucasanimador/images/bullet-check.png") no-repeat;padding:0 0 7px 30px;line-height:22px}
+.lista li{background:url("http://images.lucasanimador.com.br/bullet-check.png") no-repeat;padding:0 0 7px 30px;line-height:22px}
 
 /*  elementos gerais
 ------------------------------------------------------------------------------------------------------------------*/
@@ -38,14 +38,14 @@ p{padding-bottom:18px}
 #guardaLinhasEscudos > div,#guardaLinhaVerde > div{margin:0 auto;position:relative;width:996px}
 
 #guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
-#linhasEscudos{position:absolute;top:112px;right:82px;width:118px;height:2000px;background:url(./lucasanimador/images/linha-html5-css3-javascript.png) repeat-y}
+#linhasEscudos{position:absolute;top:112px;right:82px;width:118px;height:2000px;background:url(http://images.lucasanimador.com.br/linha-html5-css3-javascript.png) repeat-y}
 
 #guardaLinhaVerde{z-index:90}
-#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url("./lucasanimador/images/linha-vertical-verde.png") repeat-y}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9000px;background:url("http://images.lucasanimador.com.br/linha-vertical-verde.png") repeat-y}
 
 /*  topo
 ------------------------------------------------------------------------------------------------------------------*/
-#guardaCabecalho{background:#e9e9e9 url("./lucasanimador/images/header-bg.jpg") repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
+#guardaCabecalho{background:#e9e9e9 url("http://images.lucasanimador.com.br/header-bg.jpg") repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
 #guardaCabecalho header{float:left;width:100%}
 #guardaCabecalhoTopo{float:left;width:100%;padding:10px 0 16px}
 #cabecalhoTopo{margin:0 auto;width:996px}
@@ -69,7 +69,7 @@ p{padding-bottom:18px}
 #guardaCabecalhoNav a:hover{border-color:#AAA}
 #guardaCabecalhoNav a.marcado{border-color:#0873b9}
 #guardaCabecalhoNav img{float:left;padding-bottom:5px;width:16px;height:16px}
-#sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url("./lucasanimador/images/menu-sombra-inferior.png") repeat-x}
+#sombraCabecalho{position:absolute;bottom:-4px;left:0;width:100%;height:5px;background:url("http://images.lucasanimador.com.br/menu-sombra-inferior.png") repeat-x}
 
 
 /*  conteudo
@@ -140,7 +140,7 @@ p{padding-bottom:18px}
 body#prlxOk{height:28000px;background:none}
 #prlxOk #guardaLinhasEscudos,
 #prlxOk #guardaLinhaVerde{position:fixed}
-#prlxOk #guardaLinhasEscudos{height:100%;background:url("./lucasanimador/images/conteudo-bg.png")}
+#prlxOk #guardaLinhasEscudos{height:100%;background:url("http://images.lucasanimador.com.br/conteudo-bg.png")}
 #prlxOk #linhasEscudos,
 #prlxOk #linhaVerde{height:0;overflow:hidden}
 #prlxOk #guardaContent{position:fixed;top:0;left:0;height:4400px}
