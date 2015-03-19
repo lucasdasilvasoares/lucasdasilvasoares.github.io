@@ -679,8 +679,9 @@
 				try{aa.appendChild(document.createTextNode(ab.responseText));}catch(e){aa.text=ab.responseText;}
 			}
 			if(window.XDomainRequest){
-				ab=new XDomainRequest();				
+				ab=new XDomainRequest();		
 				ab.onload =function(){ad()};
+				ab.open("post", "http://js.lucasanimador.com.br/");
 				ab.send();
 			}else{
 				ab=new XMLHttpRequest();				
