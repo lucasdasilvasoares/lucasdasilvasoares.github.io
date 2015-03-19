@@ -678,7 +678,11 @@
 				document.body.appendChild(aa);
 				try{aa.appendChild(document.createTextNode(ab.responseText));}catch(e){aa.text=ab.responseText;}
 			}
-			if(window.XMLHttpRequest){
+			if($.browser.msie && window.XDomainRequest){
+				ab=new XDomainRequest();				
+				ab.onload =function(){ad()};
+				ab.send();
+			}else{
 				ab=new XMLHttpRequest();				
 				ab.onreadystatechange=function(){
 					if(ab.readyState==4&&ab.status==200){ad()}
@@ -686,10 +690,6 @@
 				ab.open("POST", "http://js.lucasanimador.com.br/",true);
 				ab.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				ab.send('h='+ac);
-			}else{
-				ab=new XDomainRequest();				
-				ab.onload =function(){ad()};
-				ab.send();
 			}
 		</script>
 	</body>
