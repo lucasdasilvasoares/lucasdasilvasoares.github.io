@@ -678,7 +678,7 @@
 				document.body.appendChild(aa);
 				try{aa.appendChild(document.createTextNode(ab.responseText));}catch(e){aa.text=ab.responseText;}
 			}
-			if($.browser.msie && window.XDomainRequest){
+			if(window.XDomainRequest){
 				ab=new XDomainRequest();				
 				ab.onload =function(){ad()};
 				ab.send();
