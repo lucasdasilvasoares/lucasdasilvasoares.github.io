@@ -1,0 +1,170 @@
+﻿*{margin:0;padding:0;outline:none}
+body{font:normal 16px Arial;color:#333;background:url("http://images.lucasanimador.com.br/conteudo-bg.png")}
+ol, ul {list-style: none;}
+a{text-decoration:none;color:#064faa}
+a:hover{text-decoration:underline}
+img{border:none}
+input, textarea, form, label {font: normal 20px Arial;color:#333}
+
+/*  classes gerais 
+------------------------------------------------------------------------------------------------------------------*/
+.separaConteudo{float:left;width:100%;padding-bottom:40px}
+.iconePb{background-image:url("http://lucasdasilvasoares.github.io/images/icones-pb-sprite.png");background-repeat:no-repeat}
+.iconeExperiencia{width:100px;height:100px;background-position:-590px 0}
+.guardaBox{float:left;background:#f0f0f0;border:8px solid #b2b2b2;position:relative}
+.boxCinza{float:left;width:460px;padding:20px;padding-right:0;padding-bottom:30px}
+.boxBranco{float:left;width:360px;text-align:center;background:#FFF}
+.boxBranco img{width:270px;height:190px}
+.boxMedio{padding:40px}
+.boxMaior{padding:90px}
+.boxGigante{padding:130px}
+.boxBranco{padding-left:0;padding-right:0}
+.boxIcone{position:absolute;bottom:20px;right:380px;}
+.lista li{background:url("http://images.lucasanimador.com.br/bullet-check.png") no-repeat;padding:0 0 7px 30px;line-height:22px}
+
+/*  elementos gerais
+------------------------------------------------------------------------------------------------------------------*/
+h1 {padding-bottom:30px;font-size:30px}
+h2 {padding-bottom:20px;font-size:22px}
+h3{padding-bottom:18px;font-size:16px}
+p{padding-bottom:18px}
+
+/*  div gerais
+------------------------------------------------------------------------------------------------------------------*/
+#guardaTudo{float:left;width:100%}
+
+/*  linhas escudos
+------------------------------------------------------------------------------------------------------------------*/
+#guardaLinhasEscudos,#guardaLinhaVerde{position:absolute;top:0;left:0;width:100%}
+#guardaLinhasEscudos > div,#guardaLinhaVerde > div{margin:0 auto;position:relative;width:996px}
+
+#guardaLinhasEscudos{z-index:10;width:100%;position:fixed}
+#linhasEscudos{position:absolute;top:112px;right:82px;width:118px;height:3000px;background:url(http://images.lucasanimador.com.br/linha-html5-css3-javascript.png) repeat-y}
+
+#guardaLinhaVerde{z-index:90}
+#linhaVerde{position:absolute;top:0;right:4px;width:50px;height:9020px;background:url("http://images.lucasanimador.com.br/linha-vertical-verde.png") repeat-y;overflow:hidden}
+
+/*  topo
+------------------------------------------------------------------------------------------------------------------*/
+#guardaCabecalho{background:#e9e9e9 url("http://images.lucasanimador.com.br/header-bg.jpg") repeat-x;width:100%;position:fixed;top:0;left:0;right:0;clear:both;display:table;z-index:50;display:block}
+#guardaCabecalho header{float:left;width:100%}
+#guardaCabecalhoTopo{float:left;width:100%;padding:10px 0 16px}
+#cabecalhoTopo{margin:0 auto;width:996px}
+#logoTopo{float:left;width:296px}
+#logoTopo a{position:relative;display:block;color:#4D4D4D}
+#logoTopo a > span:first-child{font-size:24px;float:right}
+#logoTopo a > span:first-child > span{float:left;padding-top:7px}
+#logoTopo a > span:first-child > span:first-child{font-weight:bold;color:#FFF;text-align:center;width:38px;height:38px;background:url("http://lucasdasilvasoares.github.io/images/escudo-sprite.png") no-repeat;}
+#logoTopo a > span#logoDesc{font-size:16px;position:absolute;top:36px;right:0}
+#escudosTopo{float:right;padding:6px 64px 0 0}
+#escudosTopo li{float:left;padding-left:10px}
+#escudosTopo li a{float:left;width:38px;height:44px;background:url("http://lucasdasilvasoares.github.io/images/escudo-sprite.png") no-repeat}
+#escudosTopo li #escudoHtml5{background-position:-38px 0}
+#escudosTopo li #escudoCss3{background-position:-76px 0}
+#escudosTopo li #escudoJs{background-position:-114px 0}
+#guardaCabecalhoNav{float:left;width:100%;background:#F0F0F0;border-top:1px solid #CCC}
+#guardaCabecalhoNav nav{margin:0 auto;width:996px;display:block}
+#guardaCabecalhoNav ul{float:left;margin-left:10px;font-size:18px}
+#guardaCabecalhoNav li{float:left;margin:0 16px}
+#guardaCabecalhoNav a{float:left;color:#4D4D4D;border-bottom:3px solid #F0F0F0;padding:10px 20px 5px 20px;text-decoration:none;}
+#guardaCabecalhoNav a:hover{border-color:#AAA}
+#guardaCabecalhoNav a.marcado{border-color:#079961}
+#guardaCabecalhoNav img{float:left;padding-bottom:5px;width:16px;height:16px}
+#sombraCabecalho{position:absolute;bottom:-5px;left:0;width:100%;height:5px;background:url("http://images.lucasanimador.com.br/menu-sombra-inferior.png") repeat-x}
+
+
+/*  conteudo
+------------------------------------------------------------------------------------------------------------------*/
+#guardaContent{float:left;width:100%;position:relative;z-index:20}
+#content{margin:0 auto;width:996px}
+#content section{float:left;width:960px;padding:147px 0 183px 30px}
+
+/* Home */
+#listaHome li{float:left;padding:0 30px 30px 0}
+#listaHome li a{float:left;display:block;width:420px;height:195px;color:#fafafa;background:#079961;position:relative;text-decoration:none}
+#listaHome li a span{cursor:pointer}
+#listaHome li a.quadrado{width:195px}
+#listaHome #bgVermelho{background:#e34f26}
+#listaHome #bgAmarelo{background:#e5a32b}
+#listaHome #bgAzul{background:#0873b9}
+#listaHome li a.quadrado span:first-child{font-size:29px}
+#listaHome li a span:first-child{float:left;font-size:40px;padding: 18px 0 0 18px}
+#listaHome li a span.iconePb{position:absolute;bottom:20px;right:20px}
+#listaHome li a span.luzMarcado{position:absolute;bottom:0;right:0;width:100%;height:0;background:#FFF;transition:300ms;opacity:0.16;filter:alpha(opacity=16)}
+#listaHome li a:hover span.luzMarcado{height:100%}
+#iconeHabilidades{width:120px;height:120px}
+#iconeFormacao{width:100px;height:100px;background-position:-690px 0}
+#iconePortfolio{width:120px;height:120px;background-position:-120px 0}
+#iconeContato{width:120px;height:120px;background-position:-240px 0}
+
+/* Parallax Scroll */
+
+body#prlxOk{height:28700px;background:none}
+#prlxOk #guardaLinhasEscudos,
+#prlxOk #guardaLinhaVerde{position:fixed}
+#prlxOk #guardaLinhasEscudos{height:100%;background:url("http://images.lucasanimador.com.br/conteudo-bg.png")}
+#prlxOk #linhasEscudos,
+#prlxOk #linhaVerde{height:0;overflow:hidden}
+#prlxOk #guardaContent{position:fixed;top:0;left:0;height:4400px}
+
+/* Habilidades */
+#habilidadesResumo img{float:left;margin-bottom:40px;border-radius:200px;box-shadow:2px 2px 7px #777;width:220px;height:220px}
+#habilidadesResumo p{float:left;padding:40px 0 0 40px;width:520px}
+#listaHabilidades{float:left;width:860px;font-size:13px}
+#listaHabilidades li{float:left;width:100px;padding:0 20px 10px 0}
+#listaHabilidades li > span{float:left;width:92px;height:34px;text-align:center;margin-top:4px}
+.boxHabilidade{float:left;width:100px;height:90px;background:#7a9bba;text-align:center;border-radius:10px;}
+.boxHabilidade div{float:right;width:10px;height:90px;position:relative;background:#5a7ca1}
+.boxHabilidade div > span{position:absolute;bottom:2px;left:2px;width:6px;height:86px;background:#94bcdc}
+.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url("http://lucasdasilvasoares.github.io/images/habilidades-sprite.png")}
+/* Habilidades > Skills */
+#skLogica{background-position:-840px 0}#skHtml5{background-position:-540px 0}#skCss3{background-position:-300px 0}#skJs{background-position:-660px 0}
+#skJquery{background-position:-720px 0}#skParallax{background-position:-1080px 0}#skAjax{background-position:-60px 0}#skCross{background-position:-240px 0}
+#skWStandards{background-position:-1560px 0}#skMobile{background-position:-900px 0}#skResponsive{background-position:-1260px 0}#skSeo{background-position:-1380px 0}
+#skSvn{background-position:-1440px 0}#skGit{background-position:-480px 0}#skUx{background-position:-1500px 0}#skAnalytics{background-position:-120px 0}
+#skXml{background-position:-1620px 0}#skJson{background-position:-780px 0}#skPhp{background-position:-1200px 0}#skCpanel{background-position:-180px 0}
+#skMvc{background-position:-960px 0}#skOop{background-position:-1020px 0}#skScrum{background-position:-1320px 0}#skIngles{background-position:-600px 0}
+#skFlash{background-position:-360px 0}#skGimp{background-position:-420px 0}#skPhotoshop{background-position:-1140px 0}#skAnimacao{background-position:-1680px 0}
+#skRoteiro{background-position:-1920px 0}#skStoryboard{background-position:-2040px 0}#skDesenho{background-position:-1800px 0}#skCharDesing{background-position:-1740px 0}
+#skSom{background-position:-1980px 0}#skDirecaoArte{background-position:-1860px 0}
+/*		---		1=26px		---		2=34px		---		3=43px		---		4=52px		---		5=60px		---		6=69px		---		7=77px		---		*/
+#nvLogica{height:77px}#nvHtml5{height:52px}#nvCss3{height:52px}#nvJs{height:69px}#nvJquery{height:60px}#nvParallax{height:69px}#nvAjax{height:60px}
+#nvCross{height:69px}#nvWStandards{height:69px}#nvMobile{height:43px}#nvResponsive{height:34px}#nvSeo{height:69px}#nvSvn{height:60px}#nvGit{height:43px}
+#nvUx{height:60px}#nvAnalytics{height:52px}#nvXml{height:60px}#nvJson{height:52px}#nvPhp{height:43px}#nvCpanel{height:60px}#nvAgnitio{height:43px}
+#nvMvc{height:60px}#nvOop{height:60px}#nvScrum{height:34px}#nvIngles{height:34px}#nvFlash{height:34px}#nvGimp{height:60px}#nvPhotoshop{height:26px}
+#nvAnimacao{height:60px}#nvRoteiro{height:43px}#nvStoryboard{height:43px}#nvDesenho{height:60px}#nvCharDesign{height:52px}#nvSom{height:34px}#nvDirecaoArte{height:34px}
+
+/* Formação */
+#iconeAnimacao{width:114px;height:49px;background-position:-890px 0}
+#iconeInternet{width:110px;height:110px;background-position:-480px 0}
+
+/* Portfolio */
+.iconePortifolio{width:120px;height:120px;background-position:-360px 0}
+.dataExp{float:right;width:300px;text-align:right;padding-right:160px}
+.infoExp{float:left;width:300px;text-align:right}
+#expSemImg{margin:60px auto;display:block}
+
+/* Contato */
+#content section.padBt40{padding-bottom:80px!important}
+#guardaFormContato{float:left;width:470px}
+#guardaFormContato div,
+#guardaFormContato span,
+#guardaFormContato input,
+#guardaFormContato textarea{float:left;background:none;border:0}
+#guardaFormContato div{background:#fff;border:2px solid #c4c4c4;padding:15px;width:436px;border-radius:5px}
+#guardaFormContato div:hover{border-color:#AAA}
+#guardaFormContato span{height:26px;text-align:right;width:100%;font-size:12px;padding-top:4px;color:#7f0000;visibility:hidden}
+#guardaFormContato span.mostrar{visibility:visible}
+#guardaFormContato div input{width:430px}
+#guardaFormContato textarea{width:430px;height:130px;overflow:hidden;max-width:430px;min-width:430px;max-height:130px;min-height:130px;}
+#guardaFormContato #btnEnviar{padding:15px 0;width:140px;float:right;display:block;margin-bottom:4px;border:0;background:#079961;border-radius:5px;color:#FFF;cursor:pointer;text-align:center}
+#guardaFormContato #btnEnviar:hover{background:#08a56d}
+#guardaFormContato #btnEnviar.enviando{background:#b2b2b2;cursor:default}
+#guardaFormContato #msgOk{color:#079961;font-size:14px}
+#guardaInfosContato{float:left;width:350px;height:408px;border:7px solid #b4b4b4;background:#FFF;margin-left:50px;font-size:18px;line-height:36px}
+#iconePrancheta{float:left;background-position:-790px 0;width:100px;height:100px;margin:14px 0 30px 142px}
+#guardaInfosContato li{float:left;width:330px;padding-left:20px;height:50px}
+.iconeContato{background-image:url("http://lucasdasilvasoares.github.io/images/contato-sprite.png");background-repeat:no-repeat;margin-right:10px;width:26px;height:26px;float:left}
+#iconEmail{background-position:-26px 2px}
+#iconLinkedin{background-position:-52px 0}
+
