@@ -1,8 +1,4 @@
-﻿/* Linhas topo */
-#linhasEscudos{height:3000px}
-#linhaVerde{height:height:9020px}
-
-/* Parallax Scroll */
+﻿/* Parallax Scroll */
 #prlxOk #linhasEscudos,
 #prlxOk #linhaVerde{height:0}
 
@@ -67,3 +63,6 @@
 #iconEmail{background-position:-26px 2px}
 #iconLinkedin{background-position:-52px 0}
 
+/* Linhas topo */
+#linhasEscudos{height:3000px;background:url("http://images.lucasanimador.com.br/linha-html5-css3-javascript.png") repeat-y}
+#linhaVerde{height:height:9020px;background:url("http://images.lucasanimador.com.br/linha-vertical-verde.png") repeat-y}
