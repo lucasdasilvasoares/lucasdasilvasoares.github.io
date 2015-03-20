@@ -7,7 +7,7 @@
 .boxHabilidade{float:left;width:100px;height:90px;background:#7a9bba;text-align:center;border-radius:10px;}
 .boxHabilidade div{float:right;width:10px;height:90px;position:relative;background:#5a7ca1}
 .boxHabilidade div > span{position:absolute;bottom:2px;left:2px;width:6px;height:86px;background:#94bcdc}
-.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url("http://lucasdasilvasoares.github.io/images/habilidades-sprite.png")}
+.boxHabilidade > :first-child{float:left;margin:16px 0 0 16px;width:60px;height:60px;background-image:url("http://images.lucasanimador.com.br/habilidades-sprite.png")}
 /* Habilidades > Skills */
 #skLogica{background-position:-840px 0}#skHtml5{background-position:-540px 0}#skCss3{background-position:-300px 0}#skJs{background-position:-660px 0}
 #skJquery{background-position:-720px 0}#skParallax{background-position:-1080px 0}#skAjax{background-position:-60px 0}#skCross{background-position:-240px 0}
@@ -55,7 +55,7 @@
 #guardaInfosContato{float:left;width:350px;height:408px;border:7px solid #b4b4b4;background:#FFF;margin-left:50px;font-size:18px;line-height:36px}
 #iconePrancheta{float:left;background-position:-790px 0;width:100px;height:100px;margin:14px 0 30px 142px}
 #guardaInfosContato li{float:left;width:330px;padding-left:20px;height:50px}
-.iconeContato{background-image:url("http://lucasdasilvasoares.github.io/images/contato-sprite.png");background-repeat:no-repeat;margin-right:10px;width:26px;height:26px;float:left}
+.iconeContato{background-image:url("http://images.lucasanimador.com.br/contato-sprite.png");background-repeat:no-repeat;margin-right:10px;width:26px;height:26px;float:left}
 #iconEmail{background-position:-26px 2px}
 #iconLinkedin{background-position:-52px 0}
 
