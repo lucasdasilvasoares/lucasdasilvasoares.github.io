@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+	<meta charset="utf-8" />
     <title>Cavalinho</title>
     <style type="text/css">
         *{margin: 0;padding: 0;}
@@ -12,17 +14,17 @@
         
         #guardaStatus{float: left;padding-top: 20px;width: 100%;}
         #guardaStatus label{float: left;width: 300px;}
-        #guardaStatus input{float: left;width: 169px;}
+        #guardaStatus input{float: left;width: 140px;}
         
         #play{width: 100px;height: 50px;margin: 10px auto 0 auto;}
     </style>
     <script type="text/javascript">
         var valorBackPosition = 0; // valor do positionamento do background (CSS)
-        var incrementoAtual = 1.05;  // valor da posiÁ„o "inicial" do "incremento"
+        var incrementoAtual = 1.05;  // valor da posi√ß√£o "inicial" do "incremento"
         var valorIncremento = 1.05; // incrementa de "incremento" * "incremento"
         var distanciaQuadro = 0; // distancia de "cada" quadro
-        var finalQuadro = false; // indica se o quadro terminou ou n„o
-        var delay = 41; // tempo de execuÁ„o da animaÁ„o
+        var finalQuadro = false; // indica se o quadro terminou ou n√£o
+        var delay = 41; // tempo de execu√ß√£o da anima√ß√£o
 
         function animar() {
             
@@ -30,43 +32,43 @@
             // modifica o background position
 
             valorBackPosition -= incrementoAtual;
-            // decrementa o background position para a prÛxima alteraÁ„o
+            // decrementa o background position para a pr√≥xima altera√ß√£o
 
             if (valorBackPosition <= (-804)) {
                 valorBackPosition = valorBackPosition + 804;
                 /*alert("Background Position: " + valorBackPosition + " e distanciaQuadro: " + distanciaQuadro);*/
             }
             /* 
-                SE o background position atingiu o seu total (804px), o valor È "resetado".
+                SE o background position atingiu o seu total (804px), o valor √© "resetado".
 
                 Por exemplo: se o meu "valorBackPosition" for (-800) e eu tiver um "incrementoAtual" de (5)
-                o prÛximo valor seria (-805), mas com o "reset" o "valorBackPosition" se inicia em "1"
-                da prÛxima vez (-804 + 805 = 1)
+                o pr√≥ximo valor seria (-805), mas com o "reset" o "valorBackPosition" se inicia em "1"
+                da pr√≥xima vez (-804 + 805 = 1)
 
-                Outro exemplo: o tamanho m·ximo do backgroud position (neste caso 804) È o n˙mero "0" da
-                prÛxima vez que a pelÌcula se repete, sendo o 805 igual ‡ 1 o 806 igual ‡ 2 e assim por diante.
+                Outro exemplo: o tamanho m√°ximo do backgroud position (neste caso 804) √© o n√∫mero "0" da
+                pr√≥xima vez que a pel√≠cula se repete, sendo o 805 igual √† 1 o 806 igual √† 2 e assim por diante.
 
-                Para que o "valorBackPosition" n„o se decremente infinitamente È efetuado este "reset" para
-                que o mesmo volte "para o inÌcio".            
+                Para que o "valorBackPosition" n√£o se decremente infinitamente √© efetuado este "reset" para
+                que o mesmo volte "para o in√≠cio".            
             */
 
             if (!pause) {
                 setTimeout(animar, delay);
             }
             /* 
-                A funÁ„o chama ela prÛpria cada 40 milisegundos. Essa funÁ„o chamando
-                ela mesma v·rias vezes seguidas È o que faz ‡ "animaÁ„o"
+                A fun√ß√£o chama ela pr√≥pria cada 40 milisegundos. Essa fun√ß√£o chamando
+                ela mesma v√°rias vezes seguidas √© o que faz √† "anima√ß√£o"
             */
         }
 
         function verificaDistanciaQuadro() {
             if (incrementoAtual != 67) {
                 distanciaQuadro -= incrementoAtual;
-                // decrementa a posiÁ„o de "cada" quadro
+                // decrementa a posi√ß√£o de "cada" quadro
 
                 if (distanciaQuadro <= -67) {
                     distanciaQuadro = distanciaQuadro + 67;
-                    // reseta a "distanciaQuadro", segue a mesma lÛgica da vari·vel "valorBackPosition" (explicado acima)
+                    // reseta a "distanciaQuadro", segue a mesma l√≥gica da vari√°vel "valorBackPosition" (explicado acima)
                     finalQuadro = true;
                 }
                 if (!pause) {
@@ -105,7 +107,7 @@
             }
 
         window.onload = function () {
-            // VERIFICAR PAUSE (N√O "PARA" NO FINAL)
+            // VERIFICAR PAUSE (N√ÉO "PARA" NO FINAL)
             animacaoRodando = false;
             document.getElementById("play").onclick = function () {
                 if (!animacaoRodando) {
@@ -136,7 +138,7 @@
             <div id="pelicula"></div>
             <button id="play">Play</button>
             <div id="guardaStatus">
-                <label>Dist‚ncia do Quadro:</label><input type="type" id="distanciaQuadro" name="name" value="" /><br />
+                <label>Dist√¢ncia do Quadro:</label><input type="type" id="distanciaQuadro" name="name" value="" /><br />
                 <label>Incremento Atual:</label><input type="type" id="incrementoAtual" name="name" value="" /><br />
                 <label>Background Position:</label><input type="type" id="valorBackPosition" name="name" value=" " /><br />
                 <label>Final Quadro:</label><input type="type" id="finalQuadro" name="name" value=" " /><br />
